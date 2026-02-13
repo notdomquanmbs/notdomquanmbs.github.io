@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Feb 2026 18:40:31 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Project</title>
+      <link>http://localhost:1313/posts/my-first-project/</link>
+      <pubDate>Fri, 13 Feb 2026 18:40:31 -0500</pubDate>
+      <guid>http://localhost:1313/posts/my-first-project/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;I built a Local Large Language Model using LM Studio, training a Qwen3 artifical intelligence model.&lt;/p&gt;
+&lt;h2 id=&#34;the-setup&#34;&gt;The Setup&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Local LLM Tool&lt;/strong&gt; LM Studio&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI Model&lt;/strong&gt; Qwen3-Coder&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
