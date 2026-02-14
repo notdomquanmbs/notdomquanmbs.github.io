@@ -1,4 +1,25 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https:/notdomquanmbs.github.io/'
+title = "Dominic Keone | Cyber Portfolio"
 theme = "PaperMod"
+languageCode = "en-us"
+
+[params]
+  defaultTheme = "dark" # Cyber professionals always use dark mode
+  description = "Cybersecurity Analyst & IT Specialist"
+
+  [params.profileMode]
+    enabled = true
+    title = "Dominic Keone"
+    subtitle = "Master's Student in Cybersecurity | IT Specialist"
+    imageUrl = "https://github.com/your-username.png" # Uses your GitHub profile pic automatically
+    imageTitle = "Dominic Keone"
+    
+    [[params.socialIcons]]
+      name = "github"
+      url = "https://github.com/your-username"
+    [[params.socialIcons]]
+      name = "linkedin"
+      url = "https://linkedin.com/in/your-linkedin"
+    [[params.socialIcons]]
+      name = "email"
+      url = "mailto:dkeone2018@gmail.com"
