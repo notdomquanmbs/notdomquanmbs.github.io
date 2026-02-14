@@ -4,9 +4,10 @@ theme = "PaperMod"
 languageCode = "en-us"
 
 [params]
-  defaultTheme = "dark" # Cyber professionals always use dark mode
+  defaultTheme = "dark"
   description = "Cybersecurity Analyst & IT Specialist"
-
+  
+  # This tells Hugo to relax the security check on the CSS file
   [params.assets]
     disableFingerprinting = true
 
@@ -26,3 +27,15 @@ languageCode = "en-us"
     [[params.socialIcons]]
       name = "email"
       url = "mailto:dkeone2018@gmail.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 20
