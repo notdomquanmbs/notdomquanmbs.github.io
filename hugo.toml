@@ -1,4 +1,4 @@
-baseURL = 'https:/notdomquanmbs.github.io/'
+baseURL = "https://notdomquanmbs.github.io/"
 title = "Dominic Keone | Cyber Portfolio"
 theme = "PaperMod"
 languageCode = "en-us"
@@ -15,7 +15,7 @@ languageCode = "en-us"
     enabled = true
     title = "Dominic Keone"
     subtitle = "Master's Student in Cybersecurity | IT Specialist"
-    imageUrl = "https://github.com/your-username.png" # Uses your GitHub profile pic automatically
+    imageUrl = "https://github.com/notdomquanmbs.png" # Uses your GitHub profile pic automatically
     imageTitle = "Dominic Keone"
     
     [[params.socialIcons]]
