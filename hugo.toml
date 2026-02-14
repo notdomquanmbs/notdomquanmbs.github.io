@@ -7,6 +7,9 @@ languageCode = "en-us"
   defaultTheme = "dark" # Cyber professionals always use dark mode
   description = "Cybersecurity Analyst & IT Specialist"
 
+[params.assets]
+    disableFingerprinting = true
+
   [params.profileMode]
     enabled = true
     title = "Dominic Keone"
@@ -16,10 +19,10 @@ languageCode = "en-us"
     
     [[params.socialIcons]]
       name = "github"
-      url = "https://github.com/your-username"
+      url = "https://github.com/notdomquanmbs"
     [[params.socialIcons]]
       name = "linkedin"
-      url = "https://linkedin.com/in/your-linkedin"
+      url = "https://linkedin.com/in/keoned"
     [[params.socialIcons]]
       name = "email"
       url = "mailto:dkeone2018@gmail.com"
