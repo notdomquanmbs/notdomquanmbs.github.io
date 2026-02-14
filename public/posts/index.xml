@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Posts on Dominic Keone | Cyber Portfolio</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Posts on Dominic Keone | Cyber Portfolio</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 13 Feb 2026 18:40:31 -0500</lastBuildDate>
@@ -20,6 +20,22 @@
 &lt;li&gt;&lt;strong&gt;Local LLM Tool&lt;/strong&gt; LM Studio&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;AI Model&lt;/strong&gt; Qwen3-Coder&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Project: Building a Secure Home Lab</title>
+      <link>http://localhost:1313/posts/my-home-lab/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/my-home-lab/</guid>
+      <description>&lt;h2 id=&#34;executive-summary&#34;&gt;Executive Summary&lt;/h2&gt;
+&lt;p&gt;I built a virtualized Active Directory environment to simulate enterprise network attacks and defenses. The goal was to practice log analysis, GPO configuration, and malware containment in a safe sandbox.&lt;/p&gt;
+&lt;h2 id=&#34;tools-used&#34;&gt;Tools Used&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hypervisor:&lt;/strong&gt; VMware Workstation Pro / VirtualBox&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; Windows Server 2019, Windows 10 Enterprise, Kali Linux&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security Tools:&lt;/strong&gt; Splunk (SIEM), PfSense (Firewall)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-setup&#34;&gt;The Setup&lt;/h2&gt;
+&lt;p&gt;I configured a Domain Controller (DC) and two client machines. I implemented the following security controls:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

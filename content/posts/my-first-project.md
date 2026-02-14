@@ -12,3 +12,4 @@ I built a Local Large Language Model using LM Studio, training a Qwen3 artifical
 
 * **Local LLM Tool** LM Studio
 * **AI Model** Qwen3-Coder
+
