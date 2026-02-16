@@ -5,9 +5,10 @@ draft: false
 tags: ["Home Lab", "Network Security", "Active Directory"]
 categories: ["Projects"]
 cover:
-    image: "https://github.com/adityatelange/hugo-PaperMod/wiki/images/papermod-cover.png" # You can change this to a screenshot of your lab later
+    image: "/images/topology.jpg" 
     alt: "Home Lab Diagram"
     caption: "Network Topology of my virtual environment"
+    hiddenInSingle: true
 ---
 
 ## Executive Summary
@@ -24,7 +25,7 @@ I configured a Domain Controller (DC) and two client machines. I implemented the
 2.  **Audit Logging:** Enabled advanced audit policies to track logon events (Event ID 4624).
 
 ### Network Diagram
-> *[Insert a screenshot of your network topology here later]*
+!["Network Topology"](/images/topology.jpg)
 
 ## Challenges & Solutions
 **Challenge:** I initially couldn't get the Windows 10 client to join the domain due to DNS resolution errors.
