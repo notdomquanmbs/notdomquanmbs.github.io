@@ -4,6 +4,7 @@ theme = "PaperMod"
 languageCode = "en-us"
 
 [params]
+  author = "Dominic Keone"
   defaultTheme = "dark"
   description = "Cybersecurity Analyst & IT Specialist"
   
