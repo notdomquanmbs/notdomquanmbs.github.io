@@ -16,8 +16,7 @@ I built a virtualized Active Directory environment to simulate enterprise networ
 
 ## Tools Used
 * **Hypervisor:** VMware Workstation Pro / VirtualBox
-* **OS:** Windows Server 2019, Windows 10 Enterprise, Kali Linux
-* **Security Tools:** Splunk (SIEM), PfSense (Firewall)
+* **OS:** Windows 11 Home
 
 ## The Setup
 I configured a Domain Controller (DC) and two client machines. I implemented the following security controls:
