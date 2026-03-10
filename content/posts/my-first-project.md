@@ -12,7 +12,7 @@ cover:
 ---
 
 ## Executive Summary
-For this project, I built a fully offline, privacy-focused AI coding assistant tailored specifically for Swift development. My goal was to create a secure environment where I could troubleshoot my own code without sending any data to cloud-based APIs like ChatGPT. To run the AI locally, I navigated the strict 8GB VRAM limits of my RTX 3070 Ti by deploying a heavily optimized Qwen-3B model via LM Studio. Because base AI models often lack the newest programming rules, I used a Retrieval-Augmented Generation (RAG) pipeline to feed the AI static, up-to-date Swift developer guides. This allowed me to safely bridge the gap between hardware constraints and the need for accurate, current coding assistance.
+For this project, I built a fully offline, privacy-focused AI coding assistant tailored specifically for Swift development. Base AI models often lack the newest programming rules, I used a Retrieval-Augmented Generation (RAG) pipeline to feed the AI static, up-to-date Swift developer guides. This allowed me to safely bridge the gap between hardware constraints and the need for accurate, current coding assistance.
 
 ## Hardware Architecture
 Running a Retrieval-Augmented Generation (RAG) pipeline locally requires balancing compute power with strict memory constraints. The foundation of this localized AI environment relies on consumer-grade hardware optimized for parallel processing:
