@@ -12,7 +12,7 @@ cover:
 ---
 
 ## Executive Summary
-Engineered an air-gapped, localized LLM environment using LM Studio and a quantized Qwen-3B model to analyze confidential data without external API exposure. Optimized resource allocation to run intensive RAG pipelines strictly within an 8GB VRAM limit (RTX 3070 Ti / 32GB RAM), ensuring zero-trust data processing and strict DLP compliance.
+For this project, I built a fully offline, privacy-focused AI coding assistant tailored specifically for Swift development. My goal was to create a secure environment where I could troubleshoot my own code without sending any data to cloud-based APIs like ChatGPT. To run the AI locally, I navigated the strict 8GB VRAM limits of my RTX 3070 Ti by deploying a heavily optimized Qwen-3B model via LM Studio. Because base AI models often lack the newest programming rules, I used a Retrieval-Augmented Generation (RAG) pipeline to feed the AI static, up-to-date Swift developer guides. This allowed me to safely bridge the gap between hardware constraints and the need for accurate, current coding assistance.
 
 ## Hardware Architecture
 Running a Retrieval-Augmented Generation (RAG) pipeline locally requires balancing compute power with strict memory constraints. The foundation of this localized AI environment relies on consumer-grade hardware optimized for parallel processing:
@@ -32,10 +32,7 @@ To ensure strict Data Loss Prevention (DLP) and guarantee zero network exfiltrat
 ## LLM Diagram
 !["LM Studio Diagram"](/images/llmdiagram.jpg)
 
-
-
 ## Challenges & Solutions
-
 ### Challenge: Getting Up-to-Date Swift Documentation
 My primary goal for this local AI was to use it as a secure coding assistant for Swift development. Because offline AI models (like the 3B model I used) don't always have the absolute newest programming rules in their base training data, I wanted to use RAG to feed the AI the most recent Swift developer guides. 
 
