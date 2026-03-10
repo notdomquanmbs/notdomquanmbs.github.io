@@ -29,6 +29,11 @@ To ensure strict Data Loss Prevention (DLP) and guarantee zero network exfiltrat
 * **The Core Model:** **Qwen-3B-Code (`Q4_K_M.gguf`)**. A 3-billion parameter model selected specifically for its efficiency. The 4-bit quantization (Q4) compresses the model's weights, allowing it to operate comfortably within the 8GB VRAM limit without spilling over into slower system RAM.
 * **RAG Implementation:** **Local Vector Ingestion**. Confidential documents (such as simulated network logs or proprietary schematics) are embedded and queried directly on the machine. No external vector databases or third-party APIs are contacted, maintaining a hermetically sealed data environment.
 
+## LLM Diagram
+!["LM Studio Diagram"](/images/llmdiagram.jpg)
+
+
+
 ## Challenges & Solutions
 
 ### Challenge: Getting Up-to-Date Swift Documentation
