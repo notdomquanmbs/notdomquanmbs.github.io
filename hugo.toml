@@ -3,7 +3,11 @@ title = "Dominic Keone | Cyber Portfolio"
 theme = "PaperMod"
 languageCode = "en-us"
 
+[outputs]
+  home = ["HTML", "JSON"]
+
 [params]
+  mainSections = ["posts"]
   author = "Dominic Keone"
   defaultTheme = "dark"
   description = "Cybersecurity Analyst & IT Specialist"
