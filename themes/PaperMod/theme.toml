@@ -40,10 +40,6 @@ features = [
 ]
 min_version = "0.146.0"
 
-
-[outputs]
-  home = ["HTML", "JSON"]
-
 [author]
   name = "Aditya Telange"
   homepage = "https://github.com/adityatelange/"

@@ -16,7 +16,7 @@ I built a virtualized Active Directory environment to simulate enterprise networ
 
 ## Tools Used
 * **Hypervisor:** VMware Workstation Pro / VirtualBox
-* **OS:** Windows Server 2019, Windows 10 Enterprise, Kali Linux
+* **OS:** Windows Server 2019, Windows 11 Home, Kali Linux
 * **Security Tools:** Splunk (SIEM), PfSense (Firewall)
 
 ## The Setup
