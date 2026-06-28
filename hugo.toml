@@ -19,7 +19,7 @@ languageCode = "en-us"
   [params.profileMode]
     enabled = true
     title = "Dominic Keone"
-    subtitle = "Master's Student in Cybersecurity | IT Specialist"
+    subtitle = "Cybersecurity | IT Specialist"
     imageUrl = "" # Uses your GitHub profile pic automatically
     imageTitle = "Dominic Keone"
     
