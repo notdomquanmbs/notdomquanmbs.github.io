@@ -1,7 +1,11 @@
 ---
 title: 'Project: Allergen Card & Translation App'
-date: "2026-07-06"
 description: How I built a high-accuracy, native iOS application to navigate complex dietary restrictions and local ingredient scanning completely offline.
+cover:
+  image: /images/uploads/Screenshot iPhone 17 Pro Max 07-06-2026 at 10.57.06 AM.png
+  alt: ''
+  caption: ''
+date: 2026-07-06
 ---
 
 Navigating dietary restrictions like Celiac disease internationally is a high-stakes challenge. Traditional translation utilities often fall short when dealing with niche technical terminology or hidden allergen variants (such as wheat-based shoyu or barley-derived cross-contaminants common in foreign food processing). 
@@ -42,7 +46,7 @@ The foundational safety tool of the app allows users to create high-contrast, cu
 
 \* \*\*Technical Execution:\*\* Cards dynamically adapt to the target locale's language and cultural phrasing. Rather than using direct literal translation (which can dilute the severity of a medical condition), the system maps selected allergens to explicit, pre-vetted linguistic definitions indicating zero-tolerance for contamination.
 
----
+***
 
 ## 🧠 Major Engineering Challenges Solved
 
@@ -54,7 +58,7 @@ During early testing, vertical ingredient layouts (such as traditional column la
 
 I built a geometric sorting layer directly on top of the Vision observations. By grouping text fragments into contextual rows and columns based on their layout bounding box origins before passing strings to the allergen matcher, parsing reliability jumped dramatically—eliminating dangerous false-negatives on dense, multi-column labels.
 
----
+***
 
 ## 📈 Impact & Technical Takeaways
 
