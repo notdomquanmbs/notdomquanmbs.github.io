@@ -1,6 +1,6 @@
 ---
 title: 'Project: Allergen Card & Translation App'
-date: 2026-07-06T09:49
+date: "2026-07-06"
 description: How I built a high-accuracy, native iOS application to navigate complex dietary restrictions and local ingredient scanning completely offline.
 ---
 
