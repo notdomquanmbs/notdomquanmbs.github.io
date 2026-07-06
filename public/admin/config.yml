@@ -1,1 +1,31 @@
+backend:
+  name: github
+  repo: notdomquanmbs/notdomquanmbs.github.io
+  branch: main
 
+# Tell Sveltia where uploaded images should be stored
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "content/posts" # Change to match your actual directory
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects" # Change to match your actual directory
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Project Name", name: "title", widget: "string" }
+      - { label: "Project Image", name: "image", widget: "image", required: false }
+      - { label: "Project Link", name: "link", widget: "string", required: false }
+      - { label: "Details / Write-up", name: "body", widget: "markdown" }
