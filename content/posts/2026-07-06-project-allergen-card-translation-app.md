@@ -6,7 +6,7 @@ description: How I built a high-accuracy, native iOS application to navigate com
 
 Navigating dietary restrictions like Celiac disease internationally is a high-stakes challenge. Traditional translation utilities often fall short when dealing with niche technical terminology or hidden allergen variants (such as wheat-based shoyu or barley-derived cross-contaminants common in foreign food processing). 
 
-To solve this, I designed and developed a native iOS application built entirely in Swift. The app functions as a 100% client-side safety net, combining structured digital allergen cards with real-time text parsing and fallback phrase generation—engineered to work flawlessly without cellular data or an internet connection.
+To solve this, I designed and developed a native iOS application built entirely in Swift. The app functions as a 100% client-side safety net, combining structured digital allergen cards with real-time text parsing, automated location-based localization, and fallback phrase generation—engineered to work flawlessly without cellular data or an internet connection.
 
 ## 🛠 Core Feature Implementation
 
@@ -18,15 +18,23 @@ To parse foreign ingredient lists on physical product packaging, the app impleme
 
 \* \*\*Technical Execution:\*\* It utilizes the engine's accurate recognition path, mapping localized multi-line bounding boxes into string sequences. Text normalization strips filler descriptions, allowing the app to scan text strings against localized arrays of blacklisted terms instantly.
 
-### 2. On-Device AI Phrase Generation
+### 2. Location-Aware Dynamic Localization
 
-When dynamic communication is necessary outside of pre-made templates, the app relies on a lightweight, privacy-focused client-side language engine.
+To remove friction when traveling across borders, the app automates language selection based on physical location.
+
+\* \*\*The Architecture:\*\* Powered by CoreLocation and reverse-geocoding APIs.
+
+\* \*\*Technical Execution:\*\* The app queries the device's GPS coordinates entirely on-device to determine the current country ISO code. If the user crosses into Germany, for instance, the application instantly flags the shift and defaults the primary scanning dictionaries, phrase models, and allergen cards to German without manual configuration.
+
+### 3. On-Device AI Phrase Generation & Text-to-Speech
+
+When dynamic communication is necessary outside of pre-made templates, the app relies on a lightweight, privacy-focused client-side language engine with acoustic feedback.
 
 \* \*\*The Architecture:\*\* Leveraging locally run translation utilities and contextual dictionary models, users can generate conversational phrases asking waitstaff about cooking environments, shared fryers, or ingredient substitutions.
 
-\* \*\*Technical Execution:\*\* This removes reliance on network-based LLM endpoints, keeping processing fast, local, and completely free of third-party API costs or privacy-leak vectors.
+\* \*\*Technical Execution:\*\* To ensure the message is conveyed clearly in noisy restaurant environments, the app feeds the translated output directly into Apple's AVFAudio framework (\`AVSpeechSynthesizer\`), rendering high-fidelity, native Text-to-Speech (TTS) audio in the target locale's accent.
 
-### 3. Allergen Card Creation & Dynamic Localization
+### 4. Allergen Card Creation & Dynamic Data Mapping
 
 The foundational safety tool of the app allows users to create high-contrast, customizable medical/allergen declarations.
 
@@ -50,4 +58,4 @@ I built a geometric sorting layer directly on top of the Vision observations. By
 
 ## 📈 Impact & Technical Takeaways
 
-Building this application reinforced the power of leveraging Apple's native hardware-accelerated frameworks. By keeping the scanning, database querying (SwiftData), and phrase-mapping entirely on-device, the app achieves sub-100ms processing times, preserves battery health on the go, and guarantees absolute utility in remote regions where connectivity drops to zero.
+Building this application reinforced the power of leveraging Apple's native hardware-accelerated frameworks. By keeping the scanning, database querying (SwiftData), GPS localization, and audio phrase-mapping entirely on-device, the app achieves sub-100ms processing times, preserves battery health on the go, and guarantees absolute utility in remote regions where connectivity drops to zero.
